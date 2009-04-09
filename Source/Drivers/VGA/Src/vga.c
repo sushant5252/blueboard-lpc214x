@@ -110,8 +110,9 @@ void vsync_timer_function(void)
 */
 void init_Hsync(void)
 {
-  PINSEL1 = 0x00000400;
-  PINSEL0 = 0x000A800A; /* set GPIOs for all PWMs */
+  PINSEL0 = (PINSEL0 & ~(3 << 16)) | (1 << 17);    /* set GPIOs for PWM4 */
+  PINSEL1 = (PINSEL1 & ~(3 << 10)) | (1 << 10);    /* set GPIOs for PWM5 */
+
   PWMPR = 0;  						  // prescale = 0
   PWMMCR = PWMMCR_PWMMR0I_MASK | PWMMCR_PWMMR4R_MASK ; //reset on MR0, int on MR4
   PWMPCR = PWMENA5; 					// PWM5 output enabled

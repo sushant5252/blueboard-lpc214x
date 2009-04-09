@@ -31,7 +31,7 @@ void buzzer_on()
 {    
   stop_buzzer_timer();// May be use dereg_uclk directly.
   BUZZER_DIR |= BUZZER;
-  BUZZER_SET |= BUZZER;	
+  BUZZER_CLR |= BUZZER;	
   start_buzzer_timer();
 }
 
@@ -51,7 +51,7 @@ void buzzer_on()
 void turn_off_buzzer(void)
 {
    BUZZER_DIR |= BUZZER;
-   BUZZER_CLR |= BUZZER;
+   BUZZER_SET |= BUZZER;
 }
 
 /**
