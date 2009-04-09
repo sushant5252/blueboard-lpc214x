@@ -41,7 +41,6 @@ void init_ports(void)
 {
   SCS = 3;    //sets port 1 and 0 to fast mode (not compatable with previous LPCs)
   LATCH_DIR();
-  OE_DIR();
 }
 
 /**

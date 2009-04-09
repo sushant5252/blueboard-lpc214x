@@ -1,12 +1,9 @@
 #ifndef _74HC595_
 #define _74HC595_
 
-#define STCP BIT20
-#define OE 	BIT7
+#define STCP BIT7
 
-#define LATCH_DIR() (FIO1DIR = STCP)
-#define OE_DIR() (FIO0DIR = OE)
-
+#define LATCH_DIR() (FIO0DIR = STCP)
 
 void test_leds(void);
 void parallel_data_output_high_74hc595();

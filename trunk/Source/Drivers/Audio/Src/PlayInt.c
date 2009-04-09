@@ -1206,7 +1206,8 @@ void play_audio (void)
   static unsigned short DA_val = 0;
   unsigned int blockaddress = (int)&wav_data[0];   		// calculate the absolute memory address of the block  
 
-  PINSEL1 = 0x01080000;            	// enable DAC
+  PINSEL1 = (PINSEL1 & ~(3 << 18)) | (1 << 19);    /* enable DAC */
+
   switch (mode) 
   {
     case PLAY:
