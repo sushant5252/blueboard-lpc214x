@@ -160,7 +160,7 @@ CDEF =
 
 CCOPTS  = $(OPTFLAGS) $(INCLUDES) $(CDEF) -c \
      -mlittle-endian -Wall -gdwarf-2 -std=c99 \
-     -O1 -march=armv4t -mlittle-endian -fno-builtin
+     -march=armv4t -mlittle-endian -fno-builtin
 
 #-- Linker    flags
 
