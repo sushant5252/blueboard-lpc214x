@@ -1,5 +1,5 @@
 
-typedef struct wav_hdr {
+typedef struct {
   unsigned int   magic;
   unsigned int   length;
   unsigned int   chunk_type;
@@ -13,7 +13,7 @@ typedef struct wav_hdr {
   unsigned short precision;
   unsigned int   chunk_data;
   unsigned int   data_length;
-};
+} wav_hdr;
 
 /* little and big-endian handling - RIFF/WAV files are always stored in BigEndian */
 union swap  {
