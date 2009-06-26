@@ -30,7 +30,7 @@ enum  {			// Setup play states
 signed short *p_record;       	// pointer to the audio sample 
 unsigned int eot;            	// end of audio track
 unsigned int blockindex;      	// current audio block
-struct wav_hdr* p_wav_hdr;    	// Wave file header
+wav_hdr* p_wav_hdr;    	// Wave file header
 void play_audio ();
 
  
