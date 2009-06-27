@@ -1,0 +1,252 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="BlueBoard" version="1">
+  <project Name="BlueBoard">
+    <configuration Name="Common" Target="LPC2106" arm_architecture="v4T" arm_core_type="ARM7TDMI-S" arm_simulator_memory_simulation_filename="$(StudioDir)/targets/Philips_LPC210X/LPC2000SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="LPC21;0x20000;0x10000" arm_target_debug_interface_type="ARM7TDI" arm_target_loader_parameter="12000000" gcc_entry_point="reset_handler" link_include_startup_code="No" linker_additional_files="$(StudioDir)/lib/liblpc2000$(LibExt)$(LIB)" linker_memory_map_file="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC2106_MemoryMap.xml" oscillator_frequency="12MHz" project_directory="" project_type="Executable" property_groups_file_path="$(StudioDir)/targets/Philips_LPC210X/propertyGroups21xx.xml"/>
+    <configuration Name="RAM" Placement="RAM" linker_section_placement_file="$(StudioDir)/targets/sram_placement.xml" target_reset_script="SRAMReset()"/>
+    <configuration Name="Flash" Placement="Flash" arm_target_flash_loader_file_path="$(StudioDir)/targets/Philips_LPC210X/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" linker_section_placement_file="$(StudioDir)/targets/flash_placement.xml" target_reset_script="FLASHReset()"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <configuration Name="ARM Flash Debug" c_user_include_directories="../source/app/inc;../source/platform/inc;../source/Utils/Inc;../source/efsl/inc;../source/LpcUsbStack/inc;../source/os/tn_kernel/inc;../source/drivers/keypad/inc;../source/drivers/lcd/inc;../source/drivers/atmelflash/inc;../source/drivers/audio/inc;../source/drivers/vga/inc;../source/drivers/ps2kb/inc;../source/drivers/74hc595/inc;../source/drivers/buzzer/inc;../source/drivers/eeprom/inc"/>
+      <folder Name="App">
+        <folder Name="Inc">
+          <file Name="message_queue.h" file_name="../Source/App/Inc/message_queue.h"/>
+          <file Name="fs_api.h" file_name="../Source/App/Inc/fs_api.h"/>
+          <file Name="VCOM.h" file_name="../Source/App/Inc/VCOM.h"/>
+          <file Name="led.h" file_name="../Source/App/Inc/led.h"/>
+          <file Name="test.h" file_name="../Source/App/Inc/test.h"/>
+        </folder>
+        <folder Name="Src">
+          <file Name="app.c" file_name="../Source/App/Src/app.c"/>
+          <file Name="message_queue.c" file_name="../Source/App/Src/message_queue.c"/>
+          <file Name="fs_api.c" file_name="../Source/App/Src/fs_api.c"/>
+          <file Name="VCOM.c" file_name="../Source/App/Src/VCOM.c"/>
+          <file Name="led.c" file_name="../Source/App/Src/led.c"/>
+          <file Name="test.c" file_name="../Source/App/Src/test.c"/>
+        </folder>
+      </folder>
+      <folder Name="Drivers">
+        <folder Name="VGA">
+          <folder Name="Inc">
+            <file Name="vga.h" file_name="../Source/Drivers/VGA/Inc/vga.h"/>
+          </folder>
+          <folder Name="Src">
+            <file Name="vga.c" file_name="../Source/Drivers/VGA/Src/vga.c"/>
+          </folder>
+        </folder>
+        <folder Name="LCD">
+          <folder Name="Inc">
+            <file Name="lcd.h" file_name="../Source/Drivers/lcd/inc/lcd.h"/>
+          </folder>
+          <folder Name="Src">
+            <file Name="lcd.c" file_name="../Source/Drivers/lcd/src/lcd.c"/>
+          </folder>
+        </folder>
+        <folder Name="Buzzer">
+          <folder Name="Inc">
+            <file Name="buzzer.h" file_name="../Source/Drivers/buzzer/inc/buzzer.h"/>
+          </folder>
+          <folder Name="Src">
+            <file Name="buzzer.c" file_name="../Source/Drivers/buzzer/src/buzzer.c"/>
+          </folder>
+        </folder>
+        <folder Name="Audio">
+          <folder Name="Inc">
+            <file Name="riffwave.h" file_name="../Source/Drivers/Audio/Inc/riffwave.h"/>
+          </folder>
+          <folder Name="Src">
+            <file Name="PlayInt.c" file_name="../Source/Drivers/Audio/Src/PlayInt.c"/>
+          </folder>
+        </folder>
+        <folder Name="PS2KB">
+          <folder Name="Inc">
+            <file Name="ps2kbd.h" file_name="../Source/Drivers/PS2KB/Inc/ps2kbd.h"/>
+            <file Name="scancodes.h" file_name="../Source/Drivers/PS2KB/Inc/scancodes.h"/>
+          </folder>
+          <folder Name="Src">
+            <file Name="ps2kbd.c" file_name="../Source/Drivers/PS2KB/Src/ps2kbd.c"/>
+            <file Name="extISR.c" file_name="../Source/Drivers/PS2KB/Src/extISR.c"/>
+          </folder>
+        </folder>
+        <folder Name="74HC595">
+          <folder Name="Inc">
+            <file Name="74HC595.h" file_name="../Source/Drivers/74HC595/Inc/74HC595.h"/>
+          </folder>
+          <folder Name="Src">
+            <file Name="74HC595.c" file_name="../Source/Drivers/74HC595/Src/74HC595.c"/>
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="Utils">
+        <folder Name="Inc">
+          <file Name="utils.h" file_name="../Source/Utils/Inc/utils.h"/>
+          <file Name="circular_buf.h" file_name="../Source/Utils/Inc/circular_buf.h"/>
+          <file Name="malloc.h" file_name="../Source/Utils/Inc/malloc.h"/>
+          <file Name="SoftTimer.h" file_name="../Source/Utils/Inc/SoftTimer.h"/>
+          <file Name="type.h" file_name="../Source/Utils/Inc/type.h"/>
+          <file Name="tn.h" file_name="../Source/Utils/Inc/tn.h"/>
+        </folder>
+        <folder Name="Src">
+          <file Name="utils.c" file_name="../Source/Utils/Src/utils.c"/>
+          <file Name="circular_buf.c" file_name="../Source/Utils/Src/circular_buf.c"/>
+          <file Name="malloc.c" file_name="../Source/Utils/Src/malloc.c"/>
+          <file Name="SoftTimer.c" file_name="../Source/Utils/Src/SoftTimer.c"/>
+        </folder>
+      </folder>
+      <folder Name="Platform">
+        <folder Name="Inc">
+          <file Name="uart_isr.h" file_name="../Source/Platform/Inc/uart_isr.h"/>
+          <file Name="hardware.h" file_name="../Source/Platform/Inc/hardware.h"/>
+          <file Name="lpc_2148.h" file_name="../Source/Platform/Inc/lpc_2148.h"/>
+          <file Name="lpc_config.h" file_name="../Source/Platform/Inc/lpc_config.h"/>
+          <file Name="lpc_scb.h" file_name="../Source/Platform/Inc/lpc_scb.h"/>
+          <file Name="lpc_uart.h" file_name="../Source/Platform/Inc/lpc_uart.h"/>
+          <file Name="lpc_vic.h" file_name="../Source/Platform/Inc/lpc_vic.h"/>
+          <file Name="pwm.h" file_name="../Source/Platform/Inc/pwm.h"/>
+          <file Name="spi.h" file_name="../Source/Platform/Inc/spi.h"/>
+          <file Name="timer.h" file_name="../Source/Platform/Inc/timer.h"/>
+          <file Name="uart.h" file_name="../Source/Platform/Inc/uart.h"/>
+          <file Name="rtc.h" file_name="../Source/Platform/Inc/rtc.h"/>
+          <file Name="rtcISR.h" file_name="../Source/Platform/Inc/rtcISR.h"/>
+          <file Name="dac.h" file_name="../Source/Platform/Inc/dac.h"/>
+          <file Name="i2c.h" file_name="../Source/Platform/Inc/i2c.h"/>
+          <file Name="ssp.h" file_name="../Source/Platform/Inc/ssp.h"/>
+          <file Name="adc.h" file_name="../Source/Platform/Inc/adc.h"/>
+          <file Name="ext_interrupt.h" file_name="../Source/Platform/Inc/ext_interrupt.h"/>
+        </folder>
+        <folder Name="Src">
+          <file Name="uart_isr.c" file_name="../Source/Platform/Src/uart_isr.c"/>
+          <file Name="hardware.c" file_name="../Source/Platform/Src/hardware.c"/>
+          <file Name="pwm.c" file_name="../Source/Platform/Src/pwm.c"/>
+          <file Name="spi.c" file_name="../Source/Platform/Src/spi.c"/>
+          <file Name="timer.c" file_name="../Source/Platform/Src/timer.c"/>
+          <file Name="uart.c" file_name="../Source/Platform/Src/uart.c"/>
+          <file Name="startup_hardware_init.s" file_name="../Source/Platform/Src/startup_hardware_init.s"/>
+          <file Name="startup_gcc.s" file_name="../Source/Platform/Src/startup_gcc.s"/>
+          <file Name="tn_user.c" file_name="../Source/Platform/Src/tn_user.c"/>
+          <file Name="rtc.c" file_name="../Source/Platform/Src/rtc.c"/>
+          <file Name="rtcISR.c" file_name="../Source/Platform/Src/rtcISR.c"/>
+          <file Name="dac.c" file_name="../Source/Platform/Src/dac.c"/>
+          <file Name="ssp.c" file_name="../Source/Platform/Src/ssp.c"/>
+          <file Name="i2c.c" file_name="../Source/Platform/Src/i2c.c"/>
+          <file Name="adc.c" file_name="../Source/Platform/Src/adc.c"/>
+          <file Name="ext_interrupt.c" file_name="../Source/Platform/Src/ext_interrupt.c"/>
+        </folder>
+      </folder>
+      <folder Name="efsl">
+        <folder Name="Inc">
+          <folder Name="Interface">
+            <file Name="lpc2000_dbg_printf.h" file_name="../Source/efsl/Inc/interfaces/lpc2000_dbg_printf.h"/>
+            <file Name="LPC2000_regs.h" file_name="../Source/efsl/Inc/interfaces/LPC2000_regs.h"/>
+          </folder>
+          <file Name="config.h" file_name="../Source/efsl/Inc/config.h"/>
+          <file Name="debug.h" file_name="../Source/efsl/Inc/debug.h"/>
+          <file Name="dir.h" file_name="../Source/efsl/Inc/dir.h"/>
+          <file Name="disc.h" file_name="../Source/efsl/Inc/disc.h"/>
+          <file Name="efs.h" file_name="../Source/efsl/Inc/efs.h"/>
+          <file Name="efsl_conf.h" file_name="../Source/efsl/Inc/efsl_conf.h"/>
+          <file Name="error.h" file_name="../Source/efsl/Inc/error.h"/>
+          <file Name="extract.h" file_name="../Source/efsl/Inc/extract.h"/>
+          <file Name="fat.h" file_name="../Source/efsl/Inc/fat.h"/>
+          <file Name="file.h" file_name="../Source/efsl/Inc/file.h"/>
+          <file Name="fs.h" file_name="../Source/efsl/Inc/fs.h"/>
+          <file Name="interface.h" file_name="../Source/efsl/Inc/interface.h"/>
+          <file Name="ioman.h" file_name="../Source/efsl/Inc/ioman.h"/>
+          <file Name="ls.h" file_name="../Source/efsl/Inc/ls.h"/>
+          <file Name="mkfs.h" file_name="../Source/efsl/Inc/mkfs.h"/>
+          <file Name="partition.h" file_name="../Source/efsl/Inc/partition.h"/>
+          <file Name="plibc.h" file_name="../Source/efsl/Inc/plibc.h"/>
+          <file Name="time.h" file_name="../Source/efsl/Inc/time.h"/>
+          <file Name="types.h" file_name="../Source/efsl/Inc/types.h"/>
+          <file Name="ui.h" file_name="../Source/efsl/Inc/ui.h"/>
+        </folder>
+        <folder Name="Src">
+          <folder Name="Interface">
+            <file Name="lpc2000_dbg_printf.c" file_name="../Source/efsl/Src/interfaces/lpc2000_dbg_printf.c"/>
+            <file Name="lpc2000_sd.c" file_name="../Source/efsl/Src/interfaces/lpc2000_sd.c"/>
+            <file Name="sd.c" file_name="../Source/efsl/Src/interfaces/sd.c"/>
+          </folder>
+          <file Name="debug.c" file_name="../Source/efsl/Src/debug.c"/>
+          <file Name="dir.c" file_name="../Source/efsl/Src/dir.c"/>
+          <file Name="disc.c" file_name="../Source/efsl/Src/disc.c"/>
+          <file Name="efs.c" file_name="../Source/efsl/Src/efs.c"/>
+          <file Name="extract.c" file_name="../Source/efsl/Src/extract.c"/>
+          <file Name="fat.c" file_name="../Source/efsl/Src/fat.c"/>
+          <file Name="file.c" file_name="../Source/efsl/Src/file.c"/>
+          <file Name="fs.c" file_name="../Source/efsl/Src/fs.c"/>
+          <file Name="ioman.c" file_name="../Source/efsl/Src/ioman.c"/>
+          <file Name="ls.c" file_name="../Source/efsl/Src/ls.c"/>
+          <file Name="mkfs.c" file_name="../Source/efsl/Src/mkfs.c"/>
+          <file Name="partition.c" file_name="../Source/efsl/Src/partition.c"/>
+          <file Name="plibc.c" file_name="../Source/efsl/Src/plibc.c"/>
+          <file Name="time.c" file_name="../Source/efsl/Src/time.c"/>
+          <file Name="ui.c" file_name="../Source/efsl/Src/ui.c"/>
+        </folder>
+      </folder>
+      <folder Name="OS">
+        <folder Name="TnKernel">
+          <folder Name="Inc">
+            <file Name="tn_utils.h" file_name="../Source/os/tn_kernel/inc/tn_utils.h"/>
+            <file Name="tn.h" file_name="../Source/os/tn_kernel/inc/tn.h"/>
+            <file Name="tn_port.h" file_name="../Source/os/tn_kernel/inc/tn_port.h"/>
+          </folder>
+          <folder Name="Src">
+            <file Name="tn.c" file_name="../Source/os/tn_kernel/src/tn.c"/>
+            <file Name="tn_dqueue.c" file_name="../Source/os/tn_kernel/src/tn_dqueue.c"/>
+            <file Name="tn_event.c" file_name="../Source/os/tn_kernel/src/tn_event.c"/>
+            <file Name="tn_mem.c" file_name="../Source/os/tn_kernel/src/tn_mem.c"/>
+            <file Name="tn_mutex.c" file_name="../Source/os/tn_kernel/src/tn_mutex.c"/>
+            <file Name="tn_port.c" file_name="../Source/os/tn_kernel/src/tn_port.c"/>
+            <file Name="tn_port_asm.s" file_name="../Source/os/tn_kernel/src/tn_port_asm.s"/>
+            <file Name="tn_sem.c" file_name="../Source/os/tn_kernel/src/tn_sem.c"/>
+            <file Name="tn_tasks.c" file_name="../Source/os/tn_kernel/src/tn_tasks.c"/>
+            <file Name="tn_utils.c" file_name="../Source/os/tn_kernel/src/tn_utils.c"/>
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="LpcUsbStack">
+        <folder Name="Inc">
+          <file Name="usbstruct.h" file_name="../Source/LpcUsbStack/Inc/usbstruct.h"/>
+          <file Name="usb.h" file_name="../Source/LpcUsbStack/Inc/usb.h"/>
+          <file Name="usbapi.h" file_name="../Source/LpcUsbStack/Inc/usbapi.h"/>
+          <file Name="usbdebug.h" file_name="../Source/LpcUsbStack/Inc/usbdebug.h"/>
+          <file Name="usbdesc.h" file_name="../Source/LpcUsbStack/Inc/usbdesc.h"/>
+          <file Name="usbhw_lpc.h" file_name="../Source/LpcUsbStack/Inc/usbhw_lpc.h"/>
+        </folder>
+        <folder Name="Src">
+          <file Name="usbcontrol.c" file_name="../Source/LpcUsbStack/Src/usbcontrol.c"/>
+          <file Name="usbhw_lpc.c" file_name="../Source/LpcUsbStack/Src/usbhw_lpc.c"/>
+          <file Name="usbinit.c" file_name="../Source/LpcUsbStack/Src/usbinit.c"/>
+          <file Name="usbstdreq.c" file_name="../Source/LpcUsbStack/Src/usbstdreq.c"/>
+        </folder>
+      </folder>
+    </folder>
+    <folder Name="System Files">
+      <file Name="Philips_LPC210X_Target.js" file_name="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC210X_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+      <file Name="flash_placement.xml" file_name="flash_placement.xml"/>
+      <file Name="sram_placement.xml" file_name="sram_placement.xml"/>
+      <file Name="Philips_LPC2148_MemoryMap.xml" file_name="Philips_LPC2148_MemoryMap.xml"/>
+    </folder>
+    <configuration Name="ARM Flash Debug" Target="LPC2148" arm_simulator_memory_simulation_parameter="LPC21;0x80000;0x8000" arm_target_flash_loader_file_path="$(StudioDir)/targets/Philips_LPC210X/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" build_exclude_from_build="No" build_intermediate_directory="./build" build_output_directory="./build" build_remove_unused_symbols="No" c_additional_options="-Wall" c_preprocessor_definitions="GNU;__attribute" c_system_include_directories="$(StudioDir)/include" gcc_entry_point="__start" gcc_optimization_level="None" linker_additional_files="" linker_memory_map_file="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC2148_MemoryMap.xml" linker_output_format="hex"/>
+  </project>
+  <configuration Name="ARM RAM Debug" inherited_configurations="ARM;RAM;Debug"/>
+  <configuration Name="ARM" arm_instruction_set="ARM" arm_library_instruction_set="ARM" c_preprocessor_definitions="__ARM" hidden="Yes"/>
+  <configuration Name="RAM" c_preprocessor_definitions="__RAM_BUILD" hidden="Yes"/>
+  <configuration Name="Debug" build_debug_information="Yes" c_preprocessor_definitions="DEBUG" gcc_optimization_level="None" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="ARM RAM Release" inherited_configurations="ARM;RAM;Release"/>
+  <configuration Name="Release" build_debug_information="No" c_preprocessor_definitions="NDEBUG" gcc_optimization_level="Level 1" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="THUMB RAM Debug" inherited_configurations="THUMB;RAM;Debug"/>
+  <configuration Name="THUMB" arm_instruction_set="THUMB" arm_library_instruction_set="THUMB" c_preprocessor_definitions="__THUMB" hidden="Yes"/>
+  <configuration Name="THUMB RAM Release" inherited_configurations="THUMB;RAM;Release"/>
+  <configuration Name="ARM Flash Debug" gcc_optimization_level="Level 3" inherited_configurations="ARM;Flash;Debug"/>
+  <configuration Name="Flash" c_preprocessor_definitions="__FLASH_BUILD" hidden="Yes"/>
+  <configuration Name="ARM Flash Release" inherited_configurations="ARM;Flash;Release"/>
+  <configuration Name="THUMB Flash Debug" inherited_configurations="THUMB;Flash;Debug"/>
+  <configuration Name="THUMB Flash Release" inherited_configurations="THUMB;Flash;Release"/>
+  <configuration Name="V4T ARM LE Debug" inherited_configurations="V4T;ARM;I;LE;Debug"/>
+  <configuration Name="V4T" arm_architecture="v4T" c_preprocessor_definitions="__ARCH_V4T" hidden="Yes"/>
+  <configuration Name="I" arm_interwork="Yes" c_preprocessor_definitions="__INTERWORK" hidden="Yes"/>
+  <configuration Name="LE" arm_endian="Little" c_preprocessor_definitions="__LITTLE_ENDIAN" hidden="Yes"/>
+  <configuration Name="V4T ARM LE Release" inherited_configurations="V4T;ARM;I;LE;Release"/>
+</solution>
