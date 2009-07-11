@@ -43,6 +43,6 @@ static __inline unsigned long  lswap (unsigned long ul)  {
 }
 
 void tc0 ();
-void init_timer1_for_audio (void);
+void init_timer0_for_audio (void);
 
 

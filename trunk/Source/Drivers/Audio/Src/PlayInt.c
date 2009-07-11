@@ -1245,7 +1245,7 @@ void play_audio (void)
 
 /**
 *****************************************************************************
-	Function Name : init_timer1_for_audio()
+	Function Name : init_timer0_for_audio()
 
 	Description   :
 
@@ -1256,7 +1256,7 @@ void play_audio (void)
 	Note          :
 ******************************************************************************
 */
-void init_timer1_for_audio(void) 
+void init_timer0_for_audio(void) 
 {
   T0MR0 = 0x1D4C;                          // 0.125uSec = 1875-1 counts
   T0MCR = 3;                                  // Interrupt and Reset on MR0
