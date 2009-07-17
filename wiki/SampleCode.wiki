@@ -1,0 +1,9 @@
+#BlueBoard Sample Code.
+
+= Introduction =
+
+You can download the source code from this link:
+http://blueboard-lpc214x.googlecode.com/svn/trunk/
+Note: You need to have SVN version control tool installed to download this code.
+
+
