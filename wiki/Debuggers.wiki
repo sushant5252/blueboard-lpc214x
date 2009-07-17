@@ -1,3 +1,0 @@
-Debuggers for working with Blueboard
-
-Blueboard is tested with Wiggler JTAG, but it should work fine with others.
