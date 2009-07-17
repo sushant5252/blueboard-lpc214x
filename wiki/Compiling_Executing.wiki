@@ -1,12 +1,12 @@
-*BlueBoard Compiling and Executing Code- First Timer’s Manual *
+*Blueboard Compiling and Executing Code- First Timer’s Manual *
 
-*a.Rowley CrossWorks.*
+*a.Rowley Crossworks.*
 
-i. After downloading the source code, open the folder named ‘Crossworks’, in that        open file named ‘BlueBoard’.
+i. After downloading the source code, open the folder named ‘Crossworks’, in that        open file named ‘Blueboard’.
 
 ii. A ‘Project Explorer’ window opens.
 
-iii. Click on ‘Build’ and then ‘Build BlueBoard’.
+iii. Click on ‘Build’ and then ‘Build Blueboard’.
 
 iv. The output window at the bottom of ‘Project Explorer’ will display message ‘Build Complete’ without any errors and warnings.
 
