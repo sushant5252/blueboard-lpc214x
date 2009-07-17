@@ -1,10 +1,5 @@
 *How To Download Source Code*
 
-You can download the source code from this link:
-http://blueboard-lpc214x.googlecode.com/svn/trunk/
-
-Note: You need to have SVN version control tool installed to download this code.
-
 To download the source code you must first install the SVN version control tool in your system, which can be found here: http://tortoisesvn.net/downloads
 
 After it is been installed follow below mentioned steps:
@@ -13,7 +8,7 @@ a.Create a new folder and open the folder.
 
 b.Right Click and select ‘SVN Checkout’.
 
-c.A Checkout window opens.
+c.A Checkout window opens.The source code is available at belo mentioned link:
  http://blueboard-lpc214x.googlecode.com/svn/trunk/
 
 d.Copy the above SVN checkout path and paste it in Checkout window under the ‘URL of Repository’ option and Click OK.
