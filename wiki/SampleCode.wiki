@@ -8,8 +8,12 @@ a.Create a new folder and open the folder.
 
 b.Right Click and select ‘SVN Checkout’.
 
-c.A Checkout window opens.The source code is available at belo mentioned link:
- http://blueboard-lpc214x.googlecode.com/svn/trunk/
+c.A Checkout window opens,as shown below.
+
+
+[http://blueboard-lpc214x.googlecode.com/files/BlueBoard_Sources_Checkout.jpg]
+
+SVN source code link: http://blueboard-lpc214x.googlecode.com/svn/trunk/
 
 d.Copy the above SVN checkout path and paste it in Checkout window under the ‘URL of Repository’ option and Click OK.
 
