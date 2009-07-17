@@ -1,4 +1,4 @@
-*Compilers tested with Blueboard*
+*Compilers/Debuggers tested with Blueboard*
 
 Blueboard has been tested with the following compiling/debugging platforms:
 
