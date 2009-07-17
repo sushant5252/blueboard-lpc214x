@@ -1,4 +1,4 @@
-#*BlueBoard Sample Code.*
+*BlueBoard Sample Code*
 
 
 You can download the source code from this link:
