@@ -669,7 +669,7 @@ void find_next_task_to_run(void)
 #ifdef USE_ASM_FFS
    tmp = ffs_asm(tn_ready_to_run_bmp);
    tmp--;
-#elif
+#else
    mask = 1;
    tmp = 0;
    for(i=0;i<TN_BITS_IN_INT;i++)  //-- for each bit in bmp
