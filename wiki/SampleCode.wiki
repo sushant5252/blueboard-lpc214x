@@ -11,7 +11,7 @@ b.Right Click and select ‘SVN Checkout’.
 c.A Checkout window opens,as shown below.
 
 
-[http://blueboard-lpc214x.googlecode.com/files/BlueBoard_Sources_Checkout.jpg]
+[http://blueboard-lpc214x.googlecode.com/files/BlueBoard_Sources_Checkout.JPG]
 
 SVN source code link: http://blueboard-lpc214x.googlecode.com/svn/trunk/
 
