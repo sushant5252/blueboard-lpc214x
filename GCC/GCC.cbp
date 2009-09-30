@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GCC" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="0" />
+		<Option compiler="armelfgcc" />
+		<MakeCommands>
+			<Build command="$make" />
+			<CompileFile command="$make -f $makefile $file" />
+			<Clean command="$make clean" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="$make -q -f $makefile $target" />
+			<SilentBuild command="$make -s -f $makefile $target" />
+		</MakeCommands>
+		<Build>
+			<Target title="Debug">
+				<Option type="4" />
+				<Option compiler="armelfgcc" />
+				<Compiler>
+					<Add option="-w" />
+					<Add option="-mcpu=arm7tdmi  -c -mlittle-endian -Wall -gdwarf-2 -std=c99 -march=armv4t -mlittle-endian -fno-builtin" />
+					<Add option="-I ./ -I ../Source/App/Inc -I ../Source/Drivers/Inc -I ../Source/efsl/Inc -I ../Source/LpcUsbStack/Inc -I ../Source/os/tn_kernel/Inc -I ../Source/Platform/Inc -I ../Source/Utils/Inc -I ../Source/Drivers/AtmelFlash/Inc -I ../Source/Drivers/Audio/Inc -I ../Source/Drivers/VGA/Inc -I ../Source/Drivers/PS2KB/Inc -I ../Source/Drivers/74hc595/Inc -I ../Source/Drivers/Buzzer/Inc -I ../Source/Drivers/LCD/Inc" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -f Makefile" />
+					<CompileFile command="$make" />
+					<Clean command="$make clean" />
+					<DistClean command="$make cleqn" />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -s -f $makefile $target" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\GCC" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="armelfgcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-g" />
+			<Add directory="J:\Program Files\yagarto\bin" />
+			<Add directory="..\Source\App\Inc" />
+		</Compiler>
+		<Unit filename="Makefile">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="startup_hardware_init.s" />
+		<Unit filename="tnkernel_startup_gcc.s" />
+		<Unit filename="..\Source\App\Inc\VCOM.h" />
+		<Unit filename="..\Source\App\Inc\fs_api.h" />
+		<Unit filename="..\Source\App\Inc\led.h" />
+		<Unit filename="..\Source\App\Inc\message_queue.h" />
+		<Unit filename="..\Source\App\Inc\test.h" />
+		<Unit filename="..\Source\App\Src\VCOM.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\App\Src\app.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\App\Src\fs_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\App\Src\led.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\App\Src\message_queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\App\Src\test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Drivers\74HC595\Inc\74HC595.h" />
+		<Unit filename="..\Source\Drivers\74HC595\Src\74HC595.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Drivers\Audio\Inc\riffwave.h" />
+		<Unit filename="..\Source\Drivers\Audio\Src\PlayInt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Drivers\Buzzer\inc\buzzer.h" />
+		<Unit filename="..\Source\Drivers\Buzzer\src\buzzer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Drivers\LCD\inc\lcd.h" />
+		<Unit filename="..\Source\Drivers\LCD\src\lcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Drivers\PS2KB\Inc\ps2kbd.h" />
+		<Unit filename="..\Source\Drivers\PS2KB\Inc\scancodes.h" />
+		<Unit filename="..\Source\Drivers\PS2KB\Src\extISR.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Drivers\PS2KB\Src\ps2kbd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Drivers\VGA\Inc\vga.h" />
+		<Unit filename="..\Source\Drivers\VGA\Src\vga.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\LpcUsbStack\Inc\usb.h" />
+		<Unit filename="..\Source\LpcUsbStack\Inc\usbapi.h" />
+		<Unit filename="..\Source\LpcUsbStack\Inc\usbdebug.h" />
+		<Unit filename="..\Source\LpcUsbStack\Inc\usbdesc.h" />
+		<Unit filename="..\Source\LpcUsbStack\Inc\usbhw_lpc.h" />
+		<Unit filename="..\Source\LpcUsbStack\Inc\usbstruct.h" />
+		<Unit filename="..\Source\LpcUsbStack\Src\usbcontrol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\LpcUsbStack\Src\usbhw_lpc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\LpcUsbStack\Src\usbinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\LpcUsbStack\Src\usbstdreq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Inc\adc.h" />
+		<Unit filename="..\Source\Platform\Inc\dac.h" />
+		<Unit filename="..\Source\Platform\Inc\ext_interrupt.h" />
+		<Unit filename="..\Source\Platform\Inc\hardware.h" />
+		<Unit filename="..\Source\Platform\Inc\i2c.h" />
+		<Unit filename="..\Source\Platform\Inc\lpc_2148.h" />
+		<Unit filename="..\Source\Platform\Inc\lpc_config.h" />
+		<Unit filename="..\Source\Platform\Inc\lpc_scb.h" />
+		<Unit filename="..\Source\Platform\Inc\lpc_uart.h" />
+		<Unit filename="..\Source\Platform\Inc\lpc_vic.h" />
+		<Unit filename="..\Source\Platform\Inc\pwm.h" />
+		<Unit filename="..\Source\Platform\Inc\rtc.h" />
+		<Unit filename="..\Source\Platform\Inc\rtcISR.h" />
+		<Unit filename="..\Source\Platform\Inc\spi.h" />
+		<Unit filename="..\Source\Platform\Inc\ssp.h" />
+		<Unit filename="..\Source\Platform\Inc\timer.h" />
+		<Unit filename="..\Source\Platform\Inc\uart.h" />
+		<Unit filename="..\Source\Platform\Inc\uart_isr.h" />
+		<Unit filename="..\Source\Platform\Src\adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\ext_interrupt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\hardware.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\pwm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\rtcISR.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\ssp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\startup_gcc.s" />
+		<Unit filename="..\Source\Platform\Src\startup_hardware_init.s" />
+		<Unit filename="..\Source\Platform\Src\timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\tn_user.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Platform\Src\uart_isr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Utils\Inc\SoftTimer.h" />
+		<Unit filename="..\Source\Utils\Inc\circular_buf.h" />
+		<Unit filename="..\Source\Utils\Inc\console.h" />
+		<Unit filename="..\Source\Utils\Inc\malloc.h" />
+		<Unit filename="..\Source\Utils\Inc\printf.h" />
+		<Unit filename="..\Source\Utils\Inc\type.h" />
+		<Unit filename="..\Source\Utils\Inc\utils.h" />
+		<Unit filename="..\Source\Utils\Src\SoftTimer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Utils\Src\circular_buf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Utils\Src\malloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Utils\Src\printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\Utils\Src\utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Inc\config.h" />
+		<Unit filename="..\Source\efsl\Inc\debug.h" />
+		<Unit filename="..\Source\efsl\Inc\dir.h" />
+		<Unit filename="..\Source\efsl\Inc\disc.h" />
+		<Unit filename="..\Source\efsl\Inc\efs.h" />
+		<Unit filename="..\Source\efsl\Inc\efsl_conf.h" />
+		<Unit filename="..\Source\efsl\Inc\error.h" />
+		<Unit filename="..\Source\efsl\Inc\extract.h" />
+		<Unit filename="..\Source\efsl\Inc\fat.h" />
+		<Unit filename="..\Source\efsl\Inc\file.h" />
+		<Unit filename="..\Source\efsl\Inc\fs.h" />
+		<Unit filename="..\Source\efsl\Inc\interface.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\LPC2000_regs.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\atmega128.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\dsp67xx.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\helper.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\linuxfile.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\lpc2000_dbg_printf.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\lpc2000_spi.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\nios2.h" />
+		<Unit filename="..\Source\efsl\Inc\interfaces\sd.h" />
+		<Unit filename="..\Source\efsl\Inc\ioman.h" />
+		<Unit filename="..\Source\efsl\Inc\ioman_v2.h" />
+		<Unit filename="..\Source\efsl\Inc\ls.h" />
+		<Unit filename="..\Source\efsl\Inc\mkfs.h" />
+		<Unit filename="..\Source\efsl\Inc\partition.h" />
+		<Unit filename="..\Source\efsl\Inc\plibc.h" />
+		<Unit filename="..\Source\efsl\Inc\time.h" />
+		<Unit filename="..\Source\efsl\Inc\types.h" />
+		<Unit filename="..\Source\efsl\Inc\ui.h" />
+		<Unit filename="..\Source\efsl\Src\debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\dir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\disc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\efs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\extract.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\fat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\fs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\atmega128.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\dsp67xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\linuxfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\lpc2000_dbg_printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\lpc2000_sd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\lpc2000_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\nios2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\interfaces\sd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\ioman.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\ioman_v2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\ls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\mkfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\partition.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\plibc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\regressiontest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\efsl\Src\ui.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\inc\tn.h" />
+		<Unit filename="..\Source\os\tn_kernel\inc\tn_port.h" />
+		<Unit filename="..\Source\os\tn_kernel\inc\tn_utils.h" />
+		<Unit filename="..\Source\os\tn_kernel\src\tn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\src\tn_dqueue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\src\tn_event.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\src\tn_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\src\tn_mutex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\src\tn_port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\src\tn_port_asm.s" />
+		<Unit filename="..\Source\os\tn_kernel\src\tn_port_asm_armcc.s" />
+		<Unit filename="..\Source\os\tn_kernel\src\tn_port_asm_ghs.s" />
+		<Unit filename="..\Source\os\tn_kernel\src\tn_port_asm_keil.s" />
+		<Unit filename="..\Source\os\tn_kernel\src\tn_sem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\src\tn_tasks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\os\tn_kernel\src\tn_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars set="default" />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="" main="" init_handlers="necessary" language="CPP" />
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
