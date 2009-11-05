@@ -182,43 +182,13 @@ void test_sd_card(void)
   {
     set_file_system_status(TRUE);
     lcd_clear();
-    lcd_putstring(LINE1,"SD card - OK");
+    lcd_putstring(LINE1,"SD card - PASS");
   }
   else
   {
     lcd_clear();
-    lcd_putstring(LINE1,"SD card - not OK");
+    lcd_putstring(LINE1,"SD card - FAIL");
   }
-}
-
-/**
-*******************************************************************
-	Funtion Name : check_at24c256_connction()
-
-	Description  : 
-
-	Input        : 
-
-	Output       : None
-
-	Note         :
-*****************************************************************
-*/
-U8 check_at24c256_connction()
-{
-  U8 read_buf[5];
-  U32 status=0;
-  U8 slave_address = AT24C256_I2C_ADDRESS;
-  
-  read_buf[0] = slave_address | 0x1;
-  
-  if (i2c_master_read(I2C_0, read_buf,1) == OK)
-  {
-  /* A successful i2c read means that the  data flash is connected */
-    status = 1;
-  }
-  
-  return status;
 }
 
 /**
@@ -234,21 +204,40 @@ U8 check_at24c256_connction()
 	Note         :
 *****************************************************************
 */
+
 void test_i2c_at24c256_flash(void)
 {
-  U8 wr_buffer[] = {AT24C256_I2C_ADDRESS, FIRST_WORD_ADDRESS, SECOND_WORD_ADDRESS, 1, 2, 3, 4, 5, 6, 7, 8, 10};
-  U8 rd_buffer[11] = {0};
+  U8 i=0;
+  U8 status=1;
+  U8 buf[128];
+
+  for(i=0;i<sizeof(buf);i++)
+    buf[i] = i;
   
-  if(check_at24c256_connction())
+  m24xx_write(EEPROM_24XX256, 0 , 0 , (char *)buf , sizeof(buf));
+
+  for(i=0;i<sizeof(buf);i++)
+    buf[i] = 0;
+
+  m24xx_read(EEPROM_24XX256, 0 , 0 , (char *)buf , sizeof(buf));
+
+  for(i=0;i<sizeof(buf);i++)
   {
-    lcd_putstring(LINE2,"I2C EEPROM - OK");
-    i2c_master_write(I2C_0, wr_buffer, sizeof(wr_buffer));
-    delay(1000);
-    i2c_master_write(I2C_0, wr_buffer, 3);
-    rd_buffer[0] = AT24C256_I2C_ADDRESS | 1;
-    i2c_master_read(I2C_0, rd_buffer, 10);
+    if(buf[i] != i)
+    {
+      status = 0;
+      break;
+    }    
+  }
+
+  if(status == 1)
+  {
+    lcd_putstring(LINE2,"I2C FLASH PASS");
   }
   else
-    lcd_putstring(LINE2,"I2C EEPROM-NOT OK");		
+  {
+    lcd_putstring(LINE2,"I2C FLASH FAIL");
+  }
 }
+
 
