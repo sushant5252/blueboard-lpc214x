@@ -129,7 +129,7 @@ void  HardwareInit(void)
   init_vga();
   init_timer0_for_audio();
   delay(2 * SECOND); // 5 sec delay given (for test audio)		
-  i2c_init(I2C_0);
+  i2c_lpc_init(I2C_SPEED_100);
   SPI_Init();
   turn_off_all_leds();
   init_uart0();
