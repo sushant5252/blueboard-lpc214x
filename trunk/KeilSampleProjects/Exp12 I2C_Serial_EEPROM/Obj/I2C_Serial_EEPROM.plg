@@ -1,0 +1,11 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+\\prakash\wr\BlueBoard\BlueBoardKeil\Exp12 I2C_Serial_EEPROM\I2C_Serial_EEPROM.uv2
+Project File Date:  12/16/2009
+
+<h2>Output:</h2>
+Clean started: Project: 'I2C_Serial_EEPROM'
+   deleting intermediate output files for target 'LPC2100'

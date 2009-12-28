@@ -1,0 +1,22 @@
+*** Creating Trace Output File '.\Obj\Serial.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\serial.o"'
+### ADS-LD Command completed:
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\main.o" ".\obj\serial.o" --library_type=microlib --strict --scatter ".\Obj\Serial.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Serial.map" -o ".\Obj\Serial.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\Serial.axf'
+### ADS-LD Command File: '.\Obj\Serial.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\Serial.lnp', Handle=0x00000230
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\Serial.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
