@@ -1,0 +1,525 @@
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(18): error:  #20: identifier "U8" is undefined
+main.c(18): warning:  #520-D: initialization with "{...}" expected for aggregate object
+main.c(18): error:  #20: identifier "USB_TEXT" is undefined
+main.c(20): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(27): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(31): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(33): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(33): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbstdreq.c(46): error:  #5: cannot open source input file "type.h": No such file or directory
+compiling usbcontrol.c...
+usbcontrol.c(51): error:  #5: cannot open source input file "type.h": No such file or directory
+compiling usbhw_lpc.c...
+usbhw_lpc.c(33): error:  #5: cannot open source input file "type.h": No such file or directory
+compiling usbinit.c...
+usbinit.c(33): error:  #5: cannot open source input file "type.h": No such file or directory
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(18): error:  #20: identifier "U8" is undefined
+main.c(18): warning:  #520-D: initialization with "{...}" expected for aggregate object
+main.c(18): error:  #20: identifier "USB_TEXT" is undefined
+main.c(20): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(27): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(31): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(33): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(33): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbhw_lpc.h(34): error:  #5: cannot open source input file "LPC_2148.h": No such file or directory
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(18): error:  #20: identifier "U8" is undefined
+main.c(18): warning:  #520-D: initialization with "{...}" expected for aggregate object
+main.c(18): error:  #20: identifier "USB_TEXT" is undefined
+main.c(20): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(27): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(31): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(33): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(33): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbhw_lpc.h(174): error:  #5: cannot open source input file "LPC_2148.h": No such file or directory
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(18): error:  #20: identifier "U8" is undefined
+main.c(18): warning:  #520-D: initialization with "{...}" expected for aggregate object
+main.c(18): error:  #20: identifier "USB_TEXT" is undefined
+main.c(20): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(27): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(31): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(33): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(33): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(37): error:  #5: cannot open source input file "lpc_2148.h": No such file or directory
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(19): warning:  #520-D: initialization with "{...}" expected for aggregate object
+main.c(19): error:  #20: identifier "USB_TEXT" is undefined
+main.c(21): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(28): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(32): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(34): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(34): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(37): error:  #5: cannot open source input file "lpc_2148.h": No such file or directory
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(30): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(34): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(36): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(36): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(37): error:  #5: cannot open source input file "lpc_2148.h": No such file or directory
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(30): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(34): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(36): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(36): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(38): error:  #5: cannot open source input file "tn.h": No such file or directory
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(30): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(34): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(36): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(36): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(147): error:  #20: identifier "USBReEP" is undefined
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(30): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(34): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(36): warning:  #223-D: function "VCOM_read" declared implicitly
+main.c(36): error:  #20: identifier "ch" is undefined
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+linking...
+.\Obj\Lcd.axf: Error: L6218E: Undefined symbol VCOM_init (referred from main.o).
+.\Obj\Lcd.axf: Error: L6218E: Undefined symbol VCOM_read (referred from main.o).
+.\Obj\Lcd.axf: Error: L6218E: Undefined symbol VCOM_write (referred from main.o).
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(4): error:  #5: cannot open source input file "lpc_2148.h": No such file or directory
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(5): error:  #5: cannot open source input file "tn.h": No such file or directory
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(7): error:  #5: cannot open source input file "hardware.h": No such file or directory
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(7): error:  #5: cannot open source input file "VCOM.h": No such file or directory
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(9): error:  #5: cannot open source input file "Circular_buf.h": No such file or directory
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(10): error:  #5: cannot open source input file "utils.h": No such file or directory
+compiling circular_buf.c...
+circular_buf.c(3): error:  #5: cannot open source input file "utils.h": No such file or directory
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(235): error:  #20: identifier "TN_INTSAVE_DATA" is undefined
+VCOM.c(238): warning:  #223-D: function "tn_enable_interrupt" declared implicitly
+compiling circular_buf.c...
+circular_buf.c(4): error:  #5: cannot open source input file "tn.h": No such file or directory
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(235): error:  #20: identifier "TN_INTSAVE_DATA" is undefined
+VCOM.c(238): warning:  #223-D: function "tn_enable_interrupt" declared implicitly
+compiling circular_buf.c...
+circular_buf.c(20): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(25): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(39): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(71): error:  #20: identifier "TN_INTSAVE_DATA" is undefined
+circular_buf.c(102): warning:  #223-D: function "tn_enable_interrupt" declared implicitly
+circular_buf.c(128): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(133): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(143): error:  #20: identifier "TN_INTSAVE_DATA" is undefined
+circular_buf.c(174): warning:  #223-D: function "tn_enable_interrupt" declared implicitly
+circular_buf.c(189): warning:  #68-D: integer conversion resulted in a change of sign
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+VCOM.c(235): error:  #20: identifier "TN_INTSAVE_DATA" is undefined
+VCOM.c(238): warning:  #223-D: function "tn_enable_interrupt" declared implicitly
+compiling circular_buf.c...
+circular_buf.c(20): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(25): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(39): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(71): error:  #20: identifier "TN_INTSAVE_DATA" is undefined
+circular_buf.c(102): warning:  #223-D: function "tn_enable_interrupt" declared implicitly
+circular_buf.c(128): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(133): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(173): warning:  #223-D: function "tn_enable_interrupt" declared implicitly
+circular_buf.c(188): warning:  #68-D: integer conversion resulted in a change of sign
+Target not created
+Build target 'LPC2100'
+assembling Startup.s...
+compiling Retarget.c...
+compiling main.c...
+main.c(23): warning:  #223-D: function "VCOM_write" declared implicitly
+main.c(32): warning:  #223-D: function "VCOM_init" declared implicitly
+main.c(36): warning:  #223-D: function "get_USB_enumeration_status" declared implicitly
+main.c(38): warning:  #223-D: function "VCOM_read" declared implicitly
+compiling usbstdreq.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling usbcontrol.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbcontrol.c(108): warning:  #550-D: variable "pb" was set but never used
+compiling usbhw_lpc.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(544): warning:  #68-D: integer conversion resulted in a change of sign
+usbhw_lpc.c(547): warning:  #61-D: integer operation result is out of range
+usbhw_lpc.c(547): warning:  #68-D: integer conversion resulted in a change of sign
+compiling usbinit.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling VCOM.c...
+usbapi.h(124): warning:  #1295-D: Deprecated declaration get_USB_enumeration_status - give arg types
+compiling circular_buf.c...
+circular_buf.c(20): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(25): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(39): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(127): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(132): warning:  #68-D: integer conversion resulted in a change of sign
+circular_buf.c(172): warning:  #223-D: function "tn_enable_interrupt" declared implicitly
+circular_buf.c(187): warning:  #68-D: integer conversion resulted in a change of sign
+linking...
+.\Obj\Lcd.axf: Error: L6218E: Undefined symbol s_memcpy (referred from vcom.o).
+.\Obj\Lcd.axf: Error: L6218E: Undefined symbol s_memset (referred from circular_buf.o).
+.\Obj\Lcd.axf: Error: L6218E: Undefined symbol tn_enable_interrupt (referred from circular_buf.o).
+Target not created

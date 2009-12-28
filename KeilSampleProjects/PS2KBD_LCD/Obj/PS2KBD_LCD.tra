@@ -1,0 +1,25 @@
+*** Creating Trace Output File '.\Obj\PS2KBD_LCD.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\lcd.o"'
+### List of Objects: adding '".\obj\ps2kbd.o"'
+### List of Objects: adding '".\obj\extisr.o"'
+### List of Objects: adding '".\obj\utils.o"'
+### ADS-LD Command completed:
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\main.o" ".\obj\lcd.o" ".\obj\ps2kbd.o" ".\obj\extisr.o" ".\obj\utils.o" --library_type=microlib --strict --scatter ".\Obj\PS2KBD_LCD.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\PS2KBD_LCD.map" -o ".\Obj\PS2KBD_LCD.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\PS2KBD_LCD.axf'
+### ADS-LD Command File: '.\Obj\PS2KBD_LCD.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\PS2KBD_LCD.lnp', Handle=0x00000264
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\PS2KBD_LCD.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

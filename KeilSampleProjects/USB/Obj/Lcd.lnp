@@ -1,0 +1,4 @@
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\main.o" ".\obj\usbstdreq.o" ".\obj\usbcontrol.o" ".\obj\usbhw_lpc.o" ".\obj\usbinit.o" ".\obj\vcom.o" ".\obj\circular_buf.o" --library_type=microlib --strict --scatter ".\Obj\Lcd.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Lcd.map" -o ".\Obj\Lcd.axf"
