@@ -229,6 +229,7 @@
       <file Name="Philips_LPC2148_MemoryMap.xml" file_name="Philips_LPC2148_MemoryMap.xml"/>
     </folder>
     <configuration Name="ARM Flash Debug" Target="LPC2148" arm_simulator_memory_simulation_parameter="LPC21;0x80000;0x8000" arm_target_flash_loader_file_path="$(StudioDir)/targets/Philips_LPC210X/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" build_exclude_from_build="No" build_intermediate_directory="./build" build_output_directory="./build" build_remove_unused_symbols="No" c_additional_options="-Wall" c_preprocessor_definitions="GNU;__attribute" c_system_include_directories="$(StudioDir)/include" gcc_entry_point="__start" gcc_optimization_level="None" linker_additional_files="" linker_memory_map_file="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC2148_MemoryMap.xml" linker_output_format="hex"/>
+    <configuration Name="ARM Flash Release" Target="LPC2148" arm_simulator_memory_simulation_parameter="LPC21;0x80000;0x8000" c_user_include_directories="../source/app/inc;../source/platform/inc;../source/Utils/Inc;../source/efsl/inc;../source/LpcUsbStack/inc;../source/os/tn_kernel/inc;../source/drivers/keypad/inc;../source/drivers/lcd/inc;../source/drivers/atmelflash/inc;../source/drivers/audio/inc;../source/drivers/vga/inc;../source/drivers/ps2kb/inc;../source/drivers/74hc595/inc;../source/drivers/buzzer/inc;../source/drivers/eeprom/inc" gcc_entry_point="__start" linker_memory_map_file="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC2148_MemoryMap.xml"/>
   </project>
   <configuration Name="ARM RAM Debug" inherited_configurations="ARM;RAM;Debug"/>
   <configuration Name="ARM" arm_instruction_set="ARM" arm_library_instruction_set="ARM" c_preprocessor_definitions="__ARM" hidden="Yes"/>
@@ -241,7 +242,7 @@
   <configuration Name="THUMB RAM Release" inherited_configurations="THUMB;RAM;Release"/>
   <configuration Name="ARM Flash Debug" gcc_optimization_level="Level 3" inherited_configurations="ARM;Flash;Debug"/>
   <configuration Name="Flash" c_preprocessor_definitions="__FLASH_BUILD" hidden="Yes"/>
-  <configuration Name="ARM Flash Release" inherited_configurations="ARM;Flash;Release"/>
+  <configuration Name="ARM Flash Release" gcc_entry_point="__start" inherited_configurations="ARM;Flash;Release" linker_output_format="hex"/>
   <configuration Name="THUMB Flash Debug" inherited_configurations="THUMB;Flash;Debug"/>
   <configuration Name="THUMB Flash Release" inherited_configurations="THUMB;Flash;Release"/>
   <configuration Name="V4T ARM LE Debug" inherited_configurations="V4T;ARM;I;LE;Debug"/>
