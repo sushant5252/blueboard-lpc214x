@@ -229,7 +229,8 @@ void u_free(void *packet)
 
 void delay(int count)
 {
-  int j=0,i=0;
+  volatile int j=0;
+  volatile int i=0;
 
   for(j=0;j<count;j++)
   {
